@@ -1,0 +1,24 @@
+name: PigRent
+version: 1.0
+main: com.qwertyx.pigrent.PigRentPlugin
+description: Rent pigs for transportation!
+authors:
+  - YourName
+depend:
+  - Vault
+  - EssentialsX
+
+commands:
+  pigrent:
+    description: Open pig rental menu
+    usage: /pigrent
+  parkpig:
+    description: Park rented pig
+    usage: /parkpig
+  setpark:
+    description: Set parking zone
+    usage: /setpark <x1> <y1> <z1> <x2> <y2> <z2>
+    permission: pigrent.admin
+  rent:
+    description: Rent a pig
+    usage: /rent <short|medium|long>

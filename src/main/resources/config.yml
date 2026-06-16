@@ -1,0 +1,38 @@
+# PigRent Configuration
+
+# Parking zone coordinates (x1, y1, z1, x2, y2, z2)
+# Set these with /setpark command or manually
+parking:
+  world: "world"
+  x1: 0
+  y1: 0
+  z1: 0
+  x2: 0
+  y2: 0
+  z2: 0
+
+# Rental prices and durations
+rentals:
+  short:
+    duration: 30  # seconds
+    price: 1000   # dollars
+  medium:
+    duration: 60  # seconds
+    price: 2000   # dollars
+  long:
+    duration: 300 # 5 minutes in seconds
+    price: 5000   # dollars
+
+# Warning before payment
+warning-time: 10  # seconds before parking expires
+
+# Messages
+messages:
+  prefix: "&6[PigRent] &r"
+  pig-spawned: "&aЭто твоя свинья! Катайся где хочешь!"
+  parking-zone: "&eЗона парковки &6выделена&e!"
+  warning: "&cВнимание! &eЧерез %time% сек будут списаны деньги!"
+  parking-expired: "&cВремя аренды истекло! Оплачено %price% долларов."
+  no-money: "&cУ тебя недостаточно денег! Нужно: $%price%"
+  pig-parked: "&aСвинья припаркована!"
+  not-in-parking: "&cСвинья не в зоне парковки!"
